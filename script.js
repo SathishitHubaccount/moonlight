@@ -1,15 +1,15 @@
 const PRODUCTS = [
-  { id: 1, name: "Brownies", price: 50, desc: "Rich, gooey chocolate squares with a crackly top.", image: "../static/images/brow.jpg" },
-  { id: 2, name: "Golden Blondies", price: 50, desc: "Buttery, butterscotch-flavored treats with white chocolate chips.", image: "../static/images/gold_brow.jpg" },
-  { id: 3, name: "Handcrafted Chocolates", price: 20, desc: "Assorted artisanal truffles and dark chocolate pralines.", image: "../static/images/chocolates.jpg" },
-  { id: 4, name: "Cookies", price: 10, desc: "Classic chocolate chip cookies, baked until golden and chewy.", image: "../static/images/cook.jpg" },
-  { id: 5, name: "Classic Bun Maska", price: 25, desc: "Soft, fluffy buns served with a generous layer of fresh butter.", image: "../static/images/bun_maska.jpg" },
-  { id: 6, name: "Tres Leches Cake", price: 100, desc: "Sponge cake soaked in three kinds of milk, topped with whipped cream.", image: "../static/images/cake.jpg" },
-  { id: 7, name: "Tiramisu", price: 200, desc: "Italian coffee-flavored dessert with layers of mascarpone cheese.", image: "../static/images/tiramisu.jpg" },
-  { id: 8, name: "Jar Cakes", price: 150, desc: "Layers of cake and frosting served in a convenient, portable jar.", image: "../static/images/jar_cakes.jpg" },
-  { id: 9, name: "Italian Bomboloni", price: 100, desc: "Soft, sugar-coated Italian doughnuts filled with custard or Nutella.", image: "../static/images/bomboloni.jpg" },
-  { id: 10, name: "Sweet Ladoo", price: 10, desc: "Traditional Indian sweets made with gram flour, ghee, and sugar.", image: "../static/images/image.png" },
-  { id: 11, name: "Custom Chocolate Bar", price: 300, desc: "Personalized chocolate bars with custom messages or designs.", image: "../static/images/custom_chocolate.jpeg" }
+  { id: 1, name: "Brownies", price: 50, desc: "Rich, gooey chocolate squares with a crackly top.", image: "static/images/brow.jpg" },
+  { id: 2, name: "Golden Blondies", price: 50, desc: "Buttery, butterscotch-flavored treats with white chocolate chips.", image: "static/images/gold_brow.jpg" },
+  { id: 3, name: "Handcrafted Chocolates", price: 20, desc: "Assorted artisanal truffles and dark chocolate pralines.", image: "static/images/chocolates.jpg" },
+  { id: 4, name: "Cookies", price: 10, desc: "Classic chocolate chip cookies, baked until golden and chewy.", image: "static/images/cook.jpg" },
+  { id: 5, name: "Classic Bun Maska", price: 25, desc: "Soft, fluffy buns served with a generous layer of fresh butter.", image: "static/images/bun_maska.jpg" },
+  { id: 6, name: "Tres Leches Cake", price: 100, desc: "Sponge cake soaked in three kinds of milk, topped with whipped cream.", image: "static/images/cake.jpg" },
+  { id: 7, name: "Tiramisu", price: 200, desc: "Italian coffee-flavored dessert with layers of mascarpone cheese.", image: "static/images/tiramisu.jpg" },
+  { id: 8, name: "Jar Cakes", price: 150, desc: "Layers of cake and frosting served in a convenient, portable jar.", image: "static/images/jar_cakes.jpg" },
+  { id: 9, name: "Italian Bomboloni", price: 100, desc: "Soft, sugar-coated Italian doughnuts filled with custard or Nutella.", image: "static/images/bomboloni.jpg" },
+  { id: 10, name: "Sweet Ladoo", price: 10, desc: "Traditional Indian sweets made with gram flour, ghee, and sugar.", image: "static/images/image.png" },
+  { id: 11, name: "Custom Chocolate Bar", price: 300, desc: "Personalized chocolate bars with custom messages or designs.", image: "static/images/custom_chocolate.jpeg" }
 ];
 
 const CART_KEY = "moonlight_cart";
@@ -119,3 +119,4 @@ renderProducts();
 renderCart();
 renderCheckout();
 renderSuccess();
+
