@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Dessert Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                         0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        .gold-accent { color: #A78BFA; }
+        .bg-dark { background-color: #F5F3FF; }
+        .border-gold { border-color: #A78BFA; }
+        .primary-text { color: #312E81; }
+        .card-bg { background-color: #FDFCFF; }
+        .accent-btn { background-color: #A78BFA; color: #312E81; }
+        .secondary-accent { color: #E9D5FF; }
+        .gradient-text {
+            color: #A78BFA;
+            font-style: italic;
+        }
+        .fancy-font {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-dark primary-text">
+    <nav class="p-6 flex justify-between items-center px-6 md:px-10 border-b border-gray-200">
+        <h1 class="text-2xl font-bold gold-accent">Moon Light</h1>
+        <div class="space-x-6 text-sm uppercase tracking-widest hidden md:flex">
+            <a href="index.html" class="border-b-2 border-gold pb-1">Home</a>
+            <a href="cart.html" class="hover:opacity-80 transition">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#" class="hover:opacity-80 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="py-16 md:py-20 px-6 md:px-10">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <p class="uppercase tracking-widest text-xs gold-accent mb-3">Freshly baked daily</p>
+                <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tight fancy-font gradient-text mb-4 leading-tight">
+                    Moonlight <br> Dessert Bar
+                </h2>
+                <p class="mb-8 text-lg opacity-80">A modern dessert studio for college sweet-tooths. Clean flavors, cozy vibes, and beautiful bakes.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#menu" class="accent-btn px-8 py-3 rounded font-bold hover:opacity-90 transition">Explore Menu</a>
+                    <a href="cart.html" class="border border-gold gold-accent px-8 py-3 rounded font-bold hover:bg-white/10 transition">View Cart</a>
+                </div>
+                <div class="mt-8 grid grid-cols-3 gap-4 text-center">
+                    <div class="card-bg rounded-xl p-4 border border-gray-200">
+                        <p class="text-2xl font-bold">15+</p>
+                        <p class="text-xs opacity-70">Dessert Types</p>
+                    </div>
+                    <div class="card-bg rounded-xl p-4 border border-gray-200">
+                        <p class="text-2xl font-bold">4.9★</p>
+                        <p class="text-xs opacity-70">Campus Rating</p>
+                    </div>
+                    <div class="card-bg rounded-xl p-4 border border-gray-200">
+                        <p class="text-2xl font-bold">30 min</p>
+                        <p class="text-xs opacity-70">Avg Delivery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="card-bg rounded-2xl p-5 border border-gray-200">
+                    <p class="text-sm uppercase tracking-widest opacity-70">New</p>
+                    <h3 class="text-xl font-bold mt-2">Midnight Cookie Box</h3>
+                    <p class="text-sm opacity-70 mt-2">Chewy, warm, and perfect for late-night study sessions.</p>
+                </div>
+                <div class="card-bg rounded-2xl p-5 border border-gray-200">
+                    <p class="text-sm uppercase tracking-widest opacity-70">Best Seller</p>
+                    <h3 class="text-xl font-bold mt-2">Bun Maska</h3>
+                    <p class="text-sm opacity-70 mt-2">Soft buns with generous butter — classic and comforting.</p>
+                </div>
+                <div class="card-bg rounded-2xl p-5 border border-gray-200 col-span-2">
+                    <p class="text-sm uppercase tracking-widest opacity-70">Student Combo</p>
+                    <h3 class="text-2xl font-bold mt-2">2 Jars + 1 Coffee</h3>
+                    <p class="text-sm opacity-70 mt-2">Save more with weekly combos curated for dorm cravings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 px-6 md:px-10">
+        <div class="grid md:grid-cols-4 gap-4">
+            <div class="card-bg rounded-xl p-4 border border-gray-200">
+                <p class="text-sm font-bold">🚚 Fast Delivery</p>
+                <p class="text-sm opacity-70 mt-1">Within 30–40 minutes</p>
+            </div>
+            <div class="card-bg rounded-xl p-4 border border-gray-200">
+                <p class="text-sm font-bold">🥐 Fresh Bakes</p>
+                <p class="text-sm opacity-70 mt-1">Made every morning</p>
+            </div>
+            <div class="card-bg rounded-xl p-4 border border-gray-200">
+                <p class="text-sm font-bold">💳 Easy Checkout</p>
+                <p class="text-sm opacity-70 mt-1">UPI & COD supported</p>
+            </div>
+            <div class="card-bg rounded-xl p-4 border border-gray-200">
+                <p class="text-sm font-bold">🎁 Gift Packs</p>
+                <p class="text-sm opacity-70 mt-1">Perfect for surprises</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-12 px-6 md:px-10">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-3xl font-bold">Featured Treats</h3>
+            <span class="text-sm opacity-70">Tap any item to add to cart</span>
+        </div>
+        <div id="product-grid" class="grid md:grid-cols-3 gap-10"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

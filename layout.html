@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Bar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Glow Effect */
+        .glow-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                         0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        .gold-accent { color: #A78BFA; }
+        .bg-dark { background-color: #F5F3FF; }
+        .border-gold { border-color: #A78BFA; }
+        
+        /* Misty Lavender Pastel Theme */
+        .primary-text { color: #312E81; }
+        .card-bg { background-color: #FDFCFF; }
+        .accent-btn { background-color: #A78BFA; color: #312E81; }
+        .secondary-accent { color: #E9D5FF; }
+        
+        /* Soft lavender heading */
+        .gradient-text {
+            color: #A78BFA;
+            font-style: italic;
+        }
+        
+        .fancy-font {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans">
+    <nav class="p-6 flex justify-between items-center px-10 border-b border-gray-800">
+        <h1 class="text-2xl font-bold gold-accent">Moon Light</h1>
+        <div class="space-x-8 text-sm uppercase tracking-widest hidden md:flex">
+            <a href="/" class="border-b-2 border-yellow-500 pb-1">Home</a>
+            <a href="/cart" class="hover:text-yellow-500 transition">Cart ({{ session.get('cart', [])|length }})</a>
+            <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+        </div>
+    </nav>
+    <div class="container mx-auto">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

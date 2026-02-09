@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .gold-accent { color: #A78BFA; }
+        .bg-dark { background-color: #F5F3FF; }
+        .border-gold { border-color: #A78BFA; }
+        .primary-text { color: #312E81; }
+        .card-bg { background-color: #FDFCFF; }
+        .accent-btn { background-color: #A78BFA; color: #312E81; }
+        .secondary-accent { color: #E9D5FF; }
+        body { font-family: 'Montserrat', sans-serif; font-style: italic; }
+    </style>
+</head>
+<body class="bg-dark primary-text">
+    <nav class="p-6 flex justify-between items-center px-6 md:px-10 border-b border-gray-200">
+        <h1 class="text-2xl font-bold gold-accent">Moon Light</h1>
+        <div class="space-x-6 text-sm uppercase tracking-widest hidden md:flex">
+            <a href="index.html" class="hover:opacity-80 transition">Home</a>
+            <a href="cart.html" class="hover:opacity-80 transition">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#" class="hover:opacity-80 transition">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-xl mx-auto my-16 p-8 card-bg rounded-2xl border border-gray-200">
+        <h2 class="text-3xl font-bold mb-8 gold-accent">Complete Order</h2>
+        <form id="checkout-form" class="space-y-6">
+            <div>
+                <label class="block text-sm mb-2 uppercase">Delivery Address</label>
+                <textarea name="address" rows="3" class="w-full bg-white border border-gray-300 rounded p-4 focus:border-indigo-400 outline-none" placeholder="Enter your address..." required></textarea>
+            </div>
+
+            <div>
+                <label class="block text-sm mb-4 uppercase">Payment Selection</label>
+                <div class="grid grid-cols-2 gap-4">
+                    <label class="flex flex-col items-center border border-gray-300 p-4 rounded cursor-pointer hover:bg-gray-50 transition">
+                        <input type="radio" name="payment" value="cod" checked class="accent-indigo-500">
+                        <span class="mt-2 text-sm">Cash on Delivery</span>
+                    </label>
+                    <label class="flex flex-col items-center border border-gray-300 p-4 rounded cursor-pointer hover:bg-gray-50 transition">
+                        <input type="radio" name="payment" value="upi" class="accent-indigo-500">
+                        <span class="mt-2 text-sm">UPI / QR Scan</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-gray-200 flex justify-between items-center">
+                <span>Total Payable:</span>
+                <span class="text-2xl font-bold gold-accent">₹<span id="checkout-total">0</span></span>
+            </div>
+
+            <button type="submit" class="w-full accent-btn py-4 rounded font-black text-lg hover:opacity-90 transition">
+                PLACE ORDER NOW
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
